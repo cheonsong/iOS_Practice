@@ -1,1 +1,1 @@
-* iOS practice repository *
+* iOS practice repository
