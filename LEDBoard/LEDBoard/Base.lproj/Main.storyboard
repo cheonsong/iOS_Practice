@@ -24,7 +24,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <constraints>
                             <constraint firstItem="n7y-Pf-XGT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E9q-wl-Z2b"/>
                             <constraint firstItem="n7y-Pf-XGT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="h05-Vh-n54"/>
@@ -37,6 +37,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contentLabel" destination="n7y-Pf-XGT" id="7UN-7G-VaH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,28 +82,28 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="UAa-oy-CZb">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="oga-kJ-qUT">
                                         <rect key="frame" x="0.0" y="30.5" width="167" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eka-A9-d4M">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8e-AX-kaR">
                                                 <rect key="frame" x="0.0" y="0.0" width="39" height="30"/>
                                                 <state key="normal" title="노란색"/>
                                                 <connections>
-                                                    <action selector="tapTextColorButton:" destination="uZF-Tg-Xn5" eventType="touchUpInside" id="dz0-6p-Vl0"/>
+                                                    <action selector="tapTextColorButton:" destination="uZF-Tg-Xn5" eventType="touchUpInside" id="fe4-sa-LnI"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Pz-q4-gUB">
+                                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aW-0v-J1P">
                                                 <rect key="frame" x="64" y="0.0" width="39" height="30"/>
-                                                <state key="normal" title="파란색"/>
-                                                <connections>
-                                                    <action selector="tapTextColorButton:" destination="uZF-Tg-Xn5" eventType="touchUpInside" id="2vN-oS-mij"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5L-Oq-fL3">
-                                                <rect key="frame" x="128" y="0.0" width="39" height="30"/>
                                                 <state key="normal" title="초록색"/>
                                                 <connections>
-                                                    <action selector="tapTextColorButton:" destination="uZF-Tg-Xn5" eventType="touchUpInside" id="wab-dj-l5L"/>
+                                                    <action selector="tapTextColorButton:" destination="uZF-Tg-Xn5" eventType="touchUpInside" id="pAY-Mb-ii9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qk5-rg-423">
+                                                <rect key="frame" x="128" y="0.0" width="39" height="30"/>
+                                                <state key="normal" title="보라색"/>
+                                                <connections>
+                                                    <action selector="tapTextColorButton:" destination="uZF-Tg-Xn5" eventType="touchUpInside" id="57V-zO-FDI"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -116,28 +119,28 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Awe-7H-Rec">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Y8g-M8-yJI">
                                         <rect key="frame" x="0.0" y="31.5" width="167" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meT-Yv-lCM">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cG-bJ-lw6">
                                                 <rect key="frame" x="0.0" y="0.0" width="39" height="30"/>
-                                                <state key="normal" title="검정색"/>
+                                                <state key="normal" title="파란색"/>
                                                 <connections>
-                                                    <action selector="tapBackgroundColorButton:" destination="uZF-Tg-Xn5" eventType="touchUpInside" id="fbS-E6-RSR"/>
+                                                    <action selector="tapBackgroundColorButton:" destination="uZF-Tg-Xn5" eventType="touchUpInside" id="m5k-ao-Lek"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YL-24-85i">
+                                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8L-iO-8dG">
                                                 <rect key="frame" x="64" y="0.0" width="39" height="30"/>
-                                                <state key="normal" title="보라색"/>
+                                                <state key="normal" title="검은색"/>
                                                 <connections>
-                                                    <action selector="tapBackgroundColorButton:" destination="uZF-Tg-Xn5" eventType="touchUpInside" id="34m-y7-oIa"/>
+                                                    <action selector="tapBackgroundColorButton:" destination="uZF-Tg-Xn5" eventType="touchUpInside" id="Gid-1n-Qm8"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxE-0N-ao2">
+                                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbf-mg-Rac">
                                                 <rect key="frame" x="128" y="0.0" width="39" height="30"/>
-                                                <state key="normal" title="주황색"/>
+                                                <state key="normal" title="빨강색"/>
                                                 <connections>
-                                                    <action selector="tapBackgroundColorButton:" destination="uZF-Tg-Xn5" eventType="touchUpInside" id="mxb-uN-RaR"/>
+                                                    <action selector="tapBackgroundColorButton:" destination="uZF-Tg-Xn5" eventType="touchUpInside" id="Uox-Z9-YaA"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -170,14 +173,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="설정" id="r43-9p-cvY"/>
                     <connections>
-                        <outlet property="blackButton" destination="meT-Yv-lCM" id="yZO-s5-b0L"/>
-                        <outlet property="blueButton" destination="1Pz-q4-gUB" id="GTI-bA-aCa"/>
-                        <outlet property="greenButton" destination="d5L-Oq-fL3" id="EjK-ZV-Keh"/>
-                        <outlet property="orangeButton" destination="lxE-0N-ao2" id="9MQ-Ao-bsC"/>
-                        <outlet property="purpleButton" destination="8YL-24-85i" id="9ck-5K-lXi"/>
+                        <outlet property="blackButton" destination="Y8L-iO-8dG" id="ptJ-Kh-Db2"/>
+                        <outlet property="blueButton" destination="1cG-bJ-lw6" id="cQ8-mh-i36"/>
+                        <outlet property="greenButton" destination="7aW-0v-J1P" id="M0d-ch-Cux"/>
+                        <outlet property="purpleButton" destination="Qk5-rg-423" id="ez7-ol-k1Z"/>
+                        <outlet property="redButton" destination="kbf-mg-Rac" id="XKd-hl-Lhh"/>
                         <outlet property="textField" destination="1GY-Jt-5hU" id="9ba-sH-d31"/>
-                        <outlet property="wineButton" destination="lxE-0N-ao2" id="3UO-Dg-d2N"/>
-                        <outlet property="yelloButton" destination="eka-A9-d4M" id="mDO-tV-E1L"/>
+                        <outlet property="yellowButton" destination="k8e-AX-kaR" id="Unh-eo-ve1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u5L-rQ-iho" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -202,11 +204,11 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
