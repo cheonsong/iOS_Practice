@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC7E69382731764300F17038 /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7E69372731764300F17038 /* Diary.swift */; };
 		EC83E271272822FD000AECCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC83E270272822FD000AECCA /* AppDelegate.swift */; };
 		EC83E273272822FD000AECCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC83E272272822FD000AECCA /* SceneDelegate.swift */; };
 		EC83E275272822FD000AECCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC83E274272822FD000AECCA /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC7E69372731764300F17038 /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 		EC83E26D272822FD000AECCA /* Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC83E270272822FD000AECCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC83E272272822FD000AECCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				EC83E28827282815000AECCA /* StarCell.swift */,
 				EC83E28A27282A5B000AECCA /* WriteDiaryViewController.swift */,
 				EC83E28C27282B2F000AECCA /* DiaryDetailViewController.swift */,
+				EC7E69372731764300F17038 /* Diary.swift */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				EC83E271272822FD000AECCA /* AppDelegate.swift in Sources */,
 				EC83E273272822FD000AECCA /* SceneDelegate.swift in Sources */,
 				EC83E285272826A4000AECCA /* DiaryCell.swift in Sources */,
+				EC7E69382731764300F17038 /* Diary.swift in Sources */,
 				EC83E28D27282B2F000AECCA /* DiaryDetailViewController.swift in Sources */,
 				EC83E287272826E5000AECCA /* StarViewController.swift in Sources */,
 				EC83E28B27282A5B000AECCA /* WriteDiaryViewController.swift in Sources */,
