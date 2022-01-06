@@ -20,7 +20,7 @@ class TestViewController: UIViewController {
             switch response.result {
             case .success(let res):
                 do {
-                    //print(res)
+                    print(res)
                     let jsonData = try JSONSerialization.data(withJSONObject: res, options: .prettyPrinted)
                     let json = try JSONDecoder().decode(TestMovieVO.self, from: jsonData)
                     print(json.hoppin.movies.movie)
