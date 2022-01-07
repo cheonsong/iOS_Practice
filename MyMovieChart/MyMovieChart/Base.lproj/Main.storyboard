@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +11,7 @@
         <!--영화 정보-->
         <scene sceneID="ogT-gZ-Y9K">
             <objects>
-                <tableViewController id="Fly-3b-1VW" customClass="ListViewController" customModule="MyMovieChart" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ListViewController" id="Fly-3b-1VW" customClass="ListViewController" customModule="MyMovieChart" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="nKV-Jw-zQm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,7 +100,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="영화 정보" id="WaQ-gg-ibj">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="IZi-Kb-rZ9"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="IZi-Kb-rZ9">
+                            <connections>
+                                <action selector="alertButton:" destination="Fly-3b-1VW" id="8kX-vR-K16"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="moreButton" destination="DOb-B1-1Mm" id="N8L-45-Hi4"/>
@@ -126,6 +131,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YtN-79-QsU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-420.28985507246381" y="125.89285714285714"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="53q-fO-Z2g">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="kpK-nr-3w5" customClass="DetailViewController" customModule="MyMovieChart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VXj-Vx-rc5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UN8-5j-XCS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="상세 정보" id="3L1-uR-30l">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="AXh-pr-hse">
+                                            <connections>
+                                                <action selector="back:" destination="kpK-nr-3w5" id="sLa-0C-wbl"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbc-X8-D1l">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Tp2-1N-WQy">
+                                <rect key="frame" x="197" y="421" width="20" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kyU-ma-bNF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UN8-5j-XCS" firstAttribute="top" secondItem="kyU-ma-bNF" secondAttribute="top" id="0pi-XO-3SM"/>
+                            <constraint firstItem="kyU-ma-bNF" firstAttribute="trailing" secondItem="Tp2-1N-WQy" secondAttribute="trailing" constant="197" id="7iz-XE-oky"/>
+                            <constraint firstItem="kyU-ma-bNF" firstAttribute="bottom" secondItem="Tp2-1N-WQy" secondAttribute="bottom" constant="404" id="8mI-hy-qtB"/>
+                            <constraint firstItem="Tp2-1N-WQy" firstAttribute="leading" secondItem="kyU-ma-bNF" secondAttribute="leading" constant="197" id="GCq-Vm-JjS"/>
+                            <constraint firstAttribute="bottom" secondItem="qbc-X8-D1l" secondAttribute="bottom" id="aKJ-9s-CoO"/>
+                            <constraint firstItem="Tp2-1N-WQy" firstAttribute="top" secondItem="UN8-5j-XCS" secondAttribute="bottom" constant="333" id="dY2-Vq-Mv0"/>
+                            <constraint firstItem="qbc-X8-D1l" firstAttribute="leading" secondItem="kyU-ma-bNF" secondAttribute="leading" id="eoU-Df-SvY"/>
+                            <constraint firstItem="UN8-5j-XCS" firstAttribute="leading" secondItem="qbc-X8-D1l" secondAttribute="leading" id="ich-Wk-ODW"/>
+                            <constraint firstItem="qbc-X8-D1l" firstAttribute="trailing" secondItem="kyU-ma-bNF" secondAttribute="trailing" id="jXb-7i-VzF"/>
+                            <constraint firstItem="qbc-X8-D1l" firstAttribute="top" secondItem="UN8-5j-XCS" secondAttribute="bottom" id="nAC-7a-ihY"/>
+                            <constraint firstItem="UN8-5j-XCS" firstAttribute="trailing" secondItem="qbc-X8-D1l" secondAttribute="trailing" id="nw2-6H-3wl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="c8t-z7-n4M"/>
+                    <connections>
+                        <outlet property="spinner" destination="Tp2-1N-WQy" id="qAx-1R-Qhn"/>
+                        <outlet property="wk" destination="qbc-X8-D1l" id="Y17-IN-qMi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lKr-h2-2Dk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1308.6956521739132" y="125.89285714285714"/>
         </scene>
     </scenes>
     <resources>

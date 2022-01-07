@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E831531D2787B307000E1144 /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E831531C2787B307000E1144 /* MovieData.swift */; };
+		E831531F2787F386000E1144 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E831531E2787F386000E1144 /* DetailViewController.swift */; };
 		E8779C0127852D9C00AA2E2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8779C0027852D9C00AA2E2A /* AppDelegate.swift */; };
 		E8779C0327852D9C00AA2E2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8779C0227852D9C00AA2E2A /* SceneDelegate.swift */; };
 		E8779C0827852D9C00AA2E2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8779C0627852D9C00AA2E2A /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		C8DFE8E66346A7982EC086A1 /* Pods-MyMovieChart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMovieChart.release.xcconfig"; path = "Target Support Files/Pods-MyMovieChart/Pods-MyMovieChart.release.xcconfig"; sourceTree = "<group>"; };
 		D0C484016E1DAAD4A5C0EE52 /* Pods_MyMovieChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMovieChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E831531C2787B307000E1144 /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
+		E831531E2787F386000E1144 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E8779BFD27852D9C00AA2E2A /* MyMovieChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMovieChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8779C0027852D9C00AA2E2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8779C0227852D9C00AA2E2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				E8779C322785374B00AA2E2A /* MovieVO.swift */,
 				E8779C34278565CC00AA2E2A /* MovieCell.swift */,
 				E831531C2787B307000E1144 /* MovieData.swift */,
+				E831531E2787F386000E1144 /* DetailViewController.swift */,
 			);
 			path = MyMovieChart;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				E8779C0327852D9C00AA2E2A /* SceneDelegate.swift in Sources */,
 				E8779C35278565CC00AA2E2A /* MovieCell.swift in Sources */,
 				E8779C3127852EBE00AA2E2A /* ListViewController.swift in Sources */,
+				E831531F2787F386000E1144 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,24 +7,28 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 class ListViewController: UITableViewController {
     
+    // MARK: - Type Property
     // 테이블 뷰를 구성할 리스트 데이터
     var list = [Movie?]()
     
     // 현재까지 읽어온 페이지 정보
     var page = 1
     
+    // MARK: - IBOutlet
     @IBOutlet weak var moreButton: UIButton!
     
+    // MARK: - IBAction
     @IBAction func tapMoreButton(_ sender: UIButton) {
         // 현재 페이지 값에 1 추가
         self.page += 1
         
         callMovieAPI()
     }
-    
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,6 +40,7 @@ class ListViewController: UITableViewController {
         self.tableView.rowHeight = UITableView.automaticDimension
     }
     
+    // MARK: - Func
     func callMovieAPI() {
         // 1.Hoppin API 호출을 위한 URL 생성
         let url: URL! = URL(string: "http://swiftapi.rubypaper.co.kr:2029/hoppin/movies?version=1&page=\(self.page)&count=10&genreId=&order=releasedateasc")
@@ -55,6 +60,9 @@ class ListViewController: UITableViewController {
             }
         }
     }
+    
+    // 데이터 전달을 위한 컴플리션 핸들러 클로져
+    var completionHandler: ((String) -> (String))?
 
     // MARK: - Table view data source
 
@@ -81,8 +89,20 @@ class ListViewController: UITableViewController {
     // MARK: - Table View Delegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        NSLog("선택된 행은 \(indexPath.row) 번째 행입니다")
+        let movie = self.list[indexPath.row]
         
+        guard let movie = movie else {
+            print("fail")
+            return
+        }
+        
+        _ = completionHandler?(movie.linkURL!)
+                
+        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else { return }
+        
+        viewController.modalPresentationStyle = .fullScreen
+        viewController.link = movie.linkURL!
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
 }
