@@ -21,7 +21,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOb-B1-1Mm">
-                                    <rect key="frame" x="170" y="6" width="74" height="32"/>
+                                    <rect key="frame" x="177" y="6" width="60.5" height="32"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="filled" title="더보기"/>
                                     <connections>
@@ -31,10 +31,9 @@
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstItem="DOb-B1-1Mm" firstAttribute="leading" secondItem="DAa-y8-ir4" secondAttribute="leading" constant="170" id="X25-E3-RuT"/>
                                 <constraint firstItem="DOb-B1-1Mm" firstAttribute="top" secondItem="DAa-y8-ir4" secondAttribute="top" constant="6" id="af2-b8-4Vz"/>
+                                <constraint firstItem="DOb-B1-1Mm" firstAttribute="centerX" secondItem="DAa-y8-ir4" secondAttribute="centerX" id="afA-H2-fP3"/>
                                 <constraint firstAttribute="bottom" secondItem="DOb-B1-1Mm" secondAttribute="bottom" constant="6" id="uuR-eX-69g"/>
-                                <constraint firstAttribute="trailing" secondItem="DOb-B1-1Mm" secondAttribute="trailing" constant="170" id="wHj-To-iSg"/>
                             </constraints>
                         </view>
                         <prototypes>
@@ -99,13 +98,7 @@
                             <outlet property="delegate" destination="Fly-3b-1VW" id="tin-3V-yYk"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="영화 정보" id="WaQ-gg-ibj">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="IZi-Kb-rZ9">
-                            <connections>
-                                <action selector="alertButton:" destination="Fly-3b-1VW" id="8kX-vR-K16"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="영화 정보" id="WaQ-gg-ibj"/>
                     <connections>
                         <outlet property="moreButton" destination="DOb-B1-1Mm" id="N8L-45-Hi4"/>
                     </connections>
