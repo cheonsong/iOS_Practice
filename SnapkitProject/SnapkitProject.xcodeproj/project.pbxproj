@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A546E844D21C8977CE43A22 /* Pods_SnapkitProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2F111F2DCC6648F1443C3D /* Pods_SnapkitProject.framework */; };
+		E81AC36427ACC1E0002511B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81AC36327ACC1E0002511B8 /* AppDelegate.swift */; };
+		E81AC36627ACC1E0002511B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81AC36527ACC1E0002511B8 /* SceneDelegate.swift */; };
+		E81AC36827ACC1E0002511B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81AC36727ACC1E0002511B8 /* ViewController.swift */; };
+		E81AC36B27ACC1E0002511B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81AC36927ACC1E0002511B8 /* Main.storyboard */; };
+		E81AC36D27ACC1E1002511B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E81AC36C27ACC1E1002511B8 /* Assets.xcassets */; };
+		E81AC37027ACC1E1002511B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81AC36E27ACC1E1002511B8 /* LaunchScreen.storyboard */; };
+		E81AC38027ACDE84002511B8 /* NotoSansKR-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E81AC37827ACDE84002511B8 /* NotoSansKR-Light.otf */; };
+		E81AC38127ACDE84002511B8 /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E81AC37927ACDE84002511B8 /* NotoSansKR-Bold.otf */; };
+		E81AC38227ACDE84002511B8 /* NotoSansKR-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = E81AC37A27ACDE84002511B8 /* NotoSansKR-Thin.otf */; };
+		E81AC38327ACDE84002511B8 /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = E81AC37B27ACDE84002511B8 /* NotoSansKR-Black.otf */; };
+		E81AC38427ACDE84002511B8 /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E81AC37C27ACDE84002511B8 /* NotoSansKR-Medium.otf */; };
+		E81AC38527ACDE84002511B8 /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E81AC37D27ACDE84002511B8 /* NotoSansKR-Regular.otf */; };
+		E81AC38627ACDE84002511B8 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81AC37F27ACDE84002511B8 /* ColorManager.swift */; };
+		E81AC38827ACDE92002511B8 /* fontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81AC38727ACDE92002511B8 /* fontManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4439235AEDB3685B2A5D93A2 /* Pods-SnapkitProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapkitProject.release.xcconfig"; path = "Target Support Files/Pods-SnapkitProject/Pods-SnapkitProject.release.xcconfig"; sourceTree = "<group>"; };
+		4E2F111F2DCC6648F1443C3D /* Pods_SnapkitProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapkitProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A64E5DB9E042757E5963B7 /* Pods-SnapkitProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapkitProject.debug.xcconfig"; path = "Target Support Files/Pods-SnapkitProject/Pods-SnapkitProject.debug.xcconfig"; sourceTree = "<group>"; };
+		E81AC36027ACC1E0002511B8 /* SnapkitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapkitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81AC36327ACC1E0002511B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E81AC36527ACC1E0002511B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E81AC36727ACC1E0002511B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E81AC36A27ACC1E0002511B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E81AC36C27ACC1E1002511B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E81AC36F27ACC1E1002511B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E81AC37127ACC1E1002511B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E81AC37827ACDE84002511B8 /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Light.otf"; sourceTree = "<group>"; };
+		E81AC37927ACDE84002511B8 /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
+		E81AC37A27ACDE84002511B8 /* NotoSansKR-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Thin.otf"; sourceTree = "<group>"; };
+		E81AC37B27ACDE84002511B8 /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Black.otf"; sourceTree = "<group>"; };
+		E81AC37C27ACDE84002511B8 /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
+		E81AC37D27ACDE84002511B8 /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		E81AC37F27ACDE84002511B8 /* ColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
+		E81AC38727ACDE92002511B8 /* fontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fontManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E81AC35D27ACC1E0002511B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A546E844D21C8977CE43A22 /* Pods_SnapkitProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90FB47B739A4896F1476BE14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E2F111F2DCC6648F1443C3D /* Pods_SnapkitProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1ADB4D4E3C15CC1CB8DD274 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84A64E5DB9E042757E5963B7 /* Pods-SnapkitProject.debug.xcconfig */,
+				4439235AEDB3685B2A5D93A2 /* Pods-SnapkitProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E81AC35727ACC1E0002511B8 = {
+			isa = PBXGroup;
+			children = (
+				E81AC36227ACC1E0002511B8 /* SnapkitProject */,
+				E81AC36127ACC1E0002511B8 /* Products */,
+				D1ADB4D4E3C15CC1CB8DD274 /* Pods */,
+				90FB47B739A4896F1476BE14 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E81AC36127ACC1E0002511B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E81AC36027ACC1E0002511B8 /* SnapkitProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E81AC36227ACC1E0002511B8 /* SnapkitProject */ = {
+			isa = PBXGroup;
+			children = (
+				E81AC37E27ACDE84002511B8 /* Color */,
+				E81AC37727ACDE84002511B8 /* Font */,
+				E81AC36327ACC1E0002511B8 /* AppDelegate.swift */,
+				E81AC36527ACC1E0002511B8 /* SceneDelegate.swift */,
+				E81AC36727ACC1E0002511B8 /* ViewController.swift */,
+				E81AC36927ACC1E0002511B8 /* Main.storyboard */,
+				E81AC36C27ACC1E1002511B8 /* Assets.xcassets */,
+				E81AC36E27ACC1E1002511B8 /* LaunchScreen.storyboard */,
+				E81AC37127ACC1E1002511B8 /* Info.plist */,
+			);
+			path = SnapkitProject;
+			sourceTree = "<group>";
+		};
+		E81AC37727ACDE84002511B8 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E81AC37827ACDE84002511B8 /* NotoSansKR-Light.otf */,
+				E81AC37927ACDE84002511B8 /* NotoSansKR-Bold.otf */,
+				E81AC37A27ACDE84002511B8 /* NotoSansKR-Thin.otf */,
+				E81AC37B27ACDE84002511B8 /* NotoSansKR-Black.otf */,
+				E81AC37C27ACDE84002511B8 /* NotoSansKR-Medium.otf */,
+				E81AC37D27ACDE84002511B8 /* NotoSansKR-Regular.otf */,
+				E81AC38727ACDE92002511B8 /* fontManager.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		E81AC37E27ACDE84002511B8 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				E81AC37F27ACDE84002511B8 /* ColorManager.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E81AC35F27ACC1E0002511B8 /* SnapkitProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E81AC37427ACC1E1002511B8 /* Build configuration list for PBXNativeTarget "SnapkitProject" */;
+			buildPhases = (
+				B5AEB08B8EDAE642B127B03B /* [CP] Check Pods Manifest.lock */,
+				E81AC35C27ACC1E0002511B8 /* Sources */,
+				E81AC35D27ACC1E0002511B8 /* Frameworks */,
+				E81AC35E27ACC1E0002511B8 /* Resources */,
+				9582D5EA96EB4012824D5AB8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapkitProject;
+			productName = SnapkitProject;
+			productReference = E81AC36027ACC1E0002511B8 /* SnapkitProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E81AC35827ACC1E0002511B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					E81AC35F27ACC1E0002511B8 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = E81AC35B27ACC1E0002511B8 /* Build configuration list for PBXProject "SnapkitProject" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E81AC35727ACC1E0002511B8;
+			productRefGroup = E81AC36127ACC1E0002511B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E81AC35F27ACC1E0002511B8 /* SnapkitProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E81AC35E27ACC1E0002511B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81AC38227ACDE84002511B8 /* NotoSansKR-Thin.otf in Resources */,
+				E81AC38527ACDE84002511B8 /* NotoSansKR-Regular.otf in Resources */,
+				E81AC37027ACC1E1002511B8 /* LaunchScreen.storyboard in Resources */,
+				E81AC36D27ACC1E1002511B8 /* Assets.xcassets in Resources */,
+				E81AC38027ACDE84002511B8 /* NotoSansKR-Light.otf in Resources */,
+				E81AC38427ACDE84002511B8 /* NotoSansKR-Medium.otf in Resources */,
+				E81AC36B27ACC1E0002511B8 /* Main.storyboard in Resources */,
+				E81AC38327ACDE84002511B8 /* NotoSansKR-Black.otf in Resources */,
+				E81AC38127ACDE84002511B8 /* NotoSansKR-Bold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9582D5EA96EB4012824D5AB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnapkitProject/Pods-SnapkitProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnapkitProject/Pods-SnapkitProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnapkitProject/Pods-SnapkitProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5AEB08B8EDAE642B127B03B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnapkitProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E81AC35C27ACC1E0002511B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81AC38827ACDE92002511B8 /* fontManager.swift in Sources */,
+				E81AC36827ACC1E0002511B8 /* ViewController.swift in Sources */,
+				E81AC36427ACC1E0002511B8 /* AppDelegate.swift in Sources */,
+				E81AC36627ACC1E0002511B8 /* SceneDelegate.swift in Sources */,
+				E81AC38627ACDE84002511B8 /* ColorManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E81AC36927ACC1E0002511B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E81AC36A27ACC1E0002511B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E81AC36E27ACC1E1002511B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E81AC36F27ACC1E1002511B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E81AC37227ACC1E1002511B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E81AC37327ACC1E1002511B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E81AC37527ACC1E1002511B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84A64E5DB9E042757E5963B7 /* Pods-SnapkitProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7ZK7Q3JHK4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SnapkitProject/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeoboya.SnapkitProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E81AC37627ACC1E1002511B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4439235AEDB3685B2A5D93A2 /* Pods-SnapkitProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7ZK7Q3JHK4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SnapkitProject/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeoboya.SnapkitProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E81AC35B27ACC1E0002511B8 /* Build configuration list for PBXProject "SnapkitProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E81AC37227ACC1E1002511B8 /* Debug */,
+				E81AC37327ACC1E1002511B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E81AC37427ACC1E1002511B8 /* Build configuration list for PBXNativeTarget "SnapkitProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E81AC37527ACC1E1002511B8 /* Debug */,
+				E81AC37627ACC1E1002511B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E81AC35827ACC1E0002511B8 /* Project object */;
+}
