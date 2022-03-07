@@ -15,7 +15,12 @@ class ViewController: UIViewController {
     let fontManager = FontManager.instance
     
     // Top + Bottom
-    var superView       : UIView!
+    lazy var superView       : UIView = {
+       let view = UIView()
+        view.backgroundColor = .white
+        
+        return view
+    }()
     // Top
     var topView         : UIView!
     var topLabel        : UILabel!
@@ -48,6 +53,10 @@ class ViewController: UIViewController {
         topView.addSubview(storyCountLabel)
         topView.addSubview(descriptionLabel)
         topView.addSubview(downButton)
+        
+        [topLabel, storyCountLabel, descriptionLabel, downButton].forEach {
+            topView.addSubview($0)
+        }
         
         bottomView.addSubview(storySuperView)
         bottomView.addSubview(sendButton)
