@@ -10,25 +10,41 @@ import SkeletonView
 
 class ViewController: UIViewController {
     
-    var dataList: [String] = ["test1", "test2", "test3", "test4", "test5", "test6"]
+    var currentIndex: CGFloat = 0
+    var dataList: [String] = []
     var collectionView: UICollectionView!
-    var layout = UICollectionViewFlowLayout().then {
-        $0.minimumLineSpacing = 0
-        $0.scrollDirection = .horizontal
-        $0.sectionInset = .zero
-    }
+    var layout: UICollectionViewFlowLayout!
     var button = UIButton().then {
         $0.setTitle("reload", for: .normal)
         $0.backgroundColor = .clouds
         $0.setTitleColor(.black, for: .normal)
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        (1...12).forEach {
+            dataList.append("\($0) \($0) \($0) \($0) \($0) \($0) \($0) \($0) \($0) \($0) \($0) \($0) \($0) \($0) \($0) ")
+        }
+        
+        layout = UICollectionViewFlowLayout().then {
+            $0.itemSize = CGSize(width: view.bounds.width - 40, height: view.bounds.height / 3.7)
+            $0.minimumLineSpacing = 10
+            $0.scrollDirection = .horizontal
+            $0.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 40)
+        }
+        
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout).then {
             $0.backgroundColor = .clear
             $0.register(CustomCell.self, forCellWithReuseIdentifier: CustomCell.identifier)
+            $0.showsHorizontalScrollIndicator = false
+            $0.dataSource = self
+            $0.delegate = self
+            $0.isSkeletonable = true
+            $0.decelerationRate = .fast
+            $0.isPagingEnabled = false
         }
+        
         self.view.addSubview(collectionView)
         collectionView.snp.makeConstraints {
             $0.left.top.right.equalTo(view.safeAreaLayoutGuide)
@@ -39,41 +55,33 @@ class ViewController: UIViewController {
             $0.top.equalTo(collectionView.snp.bottom)
         }
         
-        collectionView.dataSource = self
-        collectionView.delegate = self
         
-        collectionView.isSkeletonable = true
-        collectionView.showSkeleton(usingColor: .clouds, transition: .crossDissolve(0.4))
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-            self.collectionView.stopSkeletonAnimation()
-            self.collectionView.hideSkeleton(reloadDataAfter: true, transition: .crossDissolve(0.4))
-        })
+        collectionView.showAnimatedSkeleton(usingColor: .clouds, transition: .crossDissolve(0.4))
         
         button.addTarget(self, action: #selector(tap), for: .touchUpInside)
         
     }
     
     @objc func tap() {
-        collectionView.showSkeleton(usingColor: .clouds, transition: .crossDissolve(0.4))
+        collectionView.showAnimatedSkeleton(usingColor: .clouds, animation: nil, transition: .crossDissolve(0.4))
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
             self.collectionView.stopSkeletonAnimation()
             self.collectionView.hideSkeleton(reloadDataAfter: true, transition: .crossDissolve(0.4))
         })
     }
-
-
+    
+    
 }
 
-extension ViewController: SkeletonCollectionViewDelegate, SkeletonCollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension ViewController: SkeletonCollectionViewDelegate, SkeletonCollectionViewDataSource {
     
     func collectionSkeletonView(_ skeletonView: UICollectionView, cellIdentifierForItemAt indexPath: IndexPath) -> ReusableCellIdentifier {
         return "CustomCell"
     }
     
     func collectionSkeletonView(_ skeletonView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return UICollectionView.automaticNumberOfSkeletonItems
+        return dataList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -89,17 +97,22 @@ extension ViewController: SkeletonCollectionViewDelegate, SkeletonCollectionView
         return cell
     }
     
-    // UICollectionViewDelegateFlowLayout
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (collectionView.bounds.width - 10*3)
-        return CGSize(width: width / 2, height: width)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 5
-    }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 5
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        guard let layout = self.collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { return }
+        
+        let cellWidthIncludingSpacing = layout.itemSize.width + layout.minimumLineSpacing
+        
+        let estimatedIndex = scrollView.contentOffset.x / cellWidthIncludingSpacing
+        let index: Int
+        if velocity.x > 0 {
+            index = Int(ceil(estimatedIndex))
+        } else if velocity.x < 0 {
+            index = Int(floor(estimatedIndex))
+        } else {
+            index = Int(round(estimatedIndex))
+        }
+        
+        targetContentOffset.pointee = CGPoint(x: CGFloat(index) * cellWidthIncludingSpacing, y: 0)
     }
     
 }

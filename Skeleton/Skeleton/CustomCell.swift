@@ -22,6 +22,7 @@ class CustomCell: UICollectionViewCell {
     
     var label = UILabel().then {
         $0.text = "TestTestTest"
+        $0.numberOfLines = 0
     }
     
     override init(frame: CGRect) {
@@ -47,6 +48,7 @@ class CustomCell: UICollectionViewCell {
     func setConstraint() {
         imageView.snp.makeConstraints {
             $0.left.top.bottom.equalToSuperview().inset(10)
+            $0.width.equalTo(100)
         }
         
         label.snp.makeConstraints {
@@ -63,7 +65,7 @@ class CustomCell: UICollectionViewCell {
         imageView.skeletonCornerRadius = 10
         label.linesCornerRadius = 5
         
-        label.numberOfLines = 10
-        label.lastLineFillPercent = 100
+        label.numberOfLines = 2
+        label.lastLineFillPercent = 50
     }
 }
