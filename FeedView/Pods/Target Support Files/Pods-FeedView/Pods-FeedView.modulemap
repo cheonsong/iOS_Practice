@@ -1,0 +1,6 @@
+framework module Pods_FeedView {
+  umbrella header "Pods-FeedView-umbrella.h"
+
+  export *
+  module * { export * }
+}
