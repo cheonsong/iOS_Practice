@@ -55,9 +55,6 @@ class ViewController: UIViewController {
             $0.top.equalTo(collectionView.snp.bottom)
         }
         
-        
-        collectionView.showAnimatedSkeleton(usingColor: .clouds, transition: .crossDissolve(0.4))
-        
         button.addTarget(self, action: #selector(tap), for: .touchUpInside)
         
     }

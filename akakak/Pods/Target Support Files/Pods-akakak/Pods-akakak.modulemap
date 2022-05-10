@@ -1,0 +1,6 @@
+framework module Pods_akakak {
+  umbrella header "Pods-akakak-umbrella.h"
+
+  export *
+  module * { export * }
+}
